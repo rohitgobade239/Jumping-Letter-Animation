@@ -1,0 +1,43 @@
+/* Reset margin, padding, and box-sizing */
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+/* Center content and set background */
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(227, 227, 228); 
+    height: 100vh;
+}
+
+/* Pointer cursor for container */
+.container {
+    cursor: pointer;
+}
+
+/* Style for <span> */
+span {
+    font-size: 11rem;
+    color: rgba(248, 38, 1, 0.551);
+    line-height: 1;
+    display: inline-block;
+}
+
+/* Animation for active <span> */
+span.active {
+    animation: jump 2s ease-in-out;
+}
+
+/* Jump animation keyframes */
+@keyframes jump {
+    0% {
+        transform: translate(0, 0) rotate(180deg);
+    }
+    100% {
+        transform: scale(2.5) translate(0, -150px);
+    }
+}
